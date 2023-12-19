@@ -3,10 +3,10 @@ LIBRARYPATHS = "_libraries"
 ASMFILE = "out.bba"
 MACHINEFILE = "out.bbx"
 PROFILECOMPILER = --profile
-VIEWEXECUTION = --view-short
+VIEWEXECUTION = #--view-short
 EMITINTERMEDIATE = #--emit-offsets --emit-tac --emit-pil
 EMITINDICES = #--emit-indices
-MAXINSTRUCTIONS = 10000000
+MAXINSTRUCTIONS = 1000000000
 
 all:
 	@clear
