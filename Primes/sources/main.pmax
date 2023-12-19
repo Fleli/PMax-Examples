@@ -24,9 +24,7 @@ int main() {
         
         while factor < n {
             
-            int r = mod(n, factor);
-            
-            if r < 1 {
+            if mod(n, factor) < 1 {
                 assign isPrime = 0;
                 assign factor = n;
             }
