@@ -1,0 +1,11 @@
+
+// Calculate x mod y, assuming x, y > 0
+int mod(int x, int y) {
+    
+    while x >= 0 {
+        assign x = x - y;
+    }
+    
+    return x + y;
+    
+}

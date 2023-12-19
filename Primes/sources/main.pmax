@@ -1,0 +1,48 @@
+// main.pmax
+// Copyright (c) Frederik Edvardsen
+// Created 19.12.2023
+
+int main() {
+    
+    // Current number
+    int n = 1;
+    
+    // Limit
+    int max = 100;
+    
+    // Points to the first open slot in the prime numbers array
+    int* ptr = 16000;
+    
+    // n in [2 , max]
+    while n < max {
+        
+        assign n = n + 1;
+        
+        int isPrime = 1;
+        
+        int factor = 2;
+        
+        while factor < n {
+            
+            int r = mod(n, factor);
+            
+            if r < 1 {
+                assign isPrime = 0;
+                assign factor = n;
+            }
+            
+            assign factor = factor + 1;
+            
+        }
+        
+        if isPrime {
+            assign *ptr = n;
+            assign ptr = ptr + 1;
+        }
+        
+    }
+    
+    
+    return 0;
+    
+}
