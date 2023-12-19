@@ -8,7 +8,7 @@ int main() {
     int n = 1;
     
     // Limit
-    int max = 100;
+    int max = 10;
     
     // Points to the first open slot in the prime numbers array
     int* ptr = 16000;
