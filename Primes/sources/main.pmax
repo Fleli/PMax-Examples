@@ -8,10 +8,10 @@ int main() {
     int n = 1;
     
     // Limit
-    int max = 2500;
+    int max = 100;
     
     // Points to the first open slot in the prime numbers array
-    int* ptr = 16000;
+    int sum = 0;
     
     // n in [2 , max]
     while n < max {
@@ -34,13 +34,12 @@ int main() {
         }
         
         if isPrime {
-            assign *ptr = n;
-            assign ptr = ptr + 1;
+            assign sum = sum + n;
         }
         
     }
     
     
-    return 0;
+    return sum;
     
 }
